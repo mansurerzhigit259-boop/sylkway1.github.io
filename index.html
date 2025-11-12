@@ -61,7 +61,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             z-index: 10000;
             overflow-y: auto;
         }
@@ -76,11 +76,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            <a href="https://ibb.co.com/d4zsx3X3"><img src="https://i.ibb.co.com/d4zsx3X3/photo-2025-11-12-20-57-31.jpg" alt="photo-2025-11-12-20-57-31" border="0"></a>
-            background-image: url('ВСТАВЬТЕ_ССЫЛКУ_НА_ФОТО_ДЛЯ_ФОНА_ARU_ANA');
+            background-image: url('https://i.ibb.co.com/d4zsx3X3/photo-2025-11-12-20-57-31.jpg');
             background-size: cover;
             background-position: center;
-            opacity: 0.15;
+            background-attachment: fixed;
+            opacity: 0.2;
             z-index: -1;
         }
         
@@ -89,130 +89,154 @@
             min-height: 100vh;
             padding: 40px 20px;
             position: relative;
+            backdrop-filter: blur(5px);
         }
         
         .aruana-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            position: fixed;
+            top: 30px;
+            right: 30px;
             background: var(--emerald-primary);
             color: white;
             border: none;
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            font-size: 20px;
-            z-index: 2;
+            font-size: 22px;
+            z-index: 10001;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+            box-shadow: 0 4px 20px rgba(13, 148, 136, 0.4);
+            border: 2px solid var(--gold-primary);
         }
         
         .aruana-close:hover {
             background: var(--emerald-dark);
             transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(13, 148, 136, 0.6);
         }
         
         .aruana-header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-top: 20px;
+            margin-bottom: 50px;
+            padding-top: 40px;
         }
         
         .aruana-title {
             color: var(--emerald-primary);
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(13, 148, 136, 0.2);
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 8px rgba(13, 148, 136, 0.3);
         }
         
         .aruana-subtitle {
             color: var(--text-medium);
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 500;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
         }
         
         .aruana-main {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
         .aruana-section {
-            margin-bottom: 40px;
-            padding: 30px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(13, 148, 136, 0.1);
-            border: 2px solid var(--gold-primary);
+            margin-bottom: 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 12px 40px rgba(13, 148, 136, 0.15);
+            border: 3px solid var(--gold-primary);
+            backdrop-filter: blur(10px);
         }
         
         .aruana-section-title {
             color: var(--emerald-primary);
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
             text-align: center;
+            text-shadow: 0 2px 4px rgba(13, 148, 136, 0.2);
         }
         
         .aruana-description {
-            font-size: 17px;
-            line-height: 1.7;
+            font-size: 18px;
+            line-height: 1.8;
             color: var(--text-dark);
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             text-align: center;
+            font-weight: 500;
         }
         
         .aruana-spheres {
             display: grid;
-            gap: 25px;
-            margin-top: 30px;
+            gap: 30px;
+            margin-top: 40px;
         }
         
         .sphere-item {
-            padding: 25px;
-            background: var(--beige-light);
-            border-radius: 15px;
-            border-left: 4px solid var(--emerald-primary);
+            padding: 30px;
+            background: linear-gradient(135deg, var(--beige-light), var(--beige-card));
+            border-radius: 20px;
+            border-left: 5px solid var(--emerald-primary);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .sphere-item:hover {
+            transform: translateY(-5px);
         }
         
         .sphere-title {
             color: var(--emerald-primary);
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
         
         .sphere-text {
             color: var(--text-dark);
-            line-height: 1.6;
-            font-size: 16px;
+            line-height: 1.7;
+            font-size: 17px;
+            font-weight: 500;
         }
         
-        .price-image-container {
-            text-align: center;
-            margin: 30px 0;
+        .price-fullscreen {
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
         }
         
         .price-image {
-            max-width: 100%;
+            max-width: 95%;
+            max-height: 85vh;
+            width: auto;
             height: auto;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            border: 3px solid var(--gold-primary);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            border: 4px solid var(--gold-primary);
+            object-fit: contain;
         }
         
         .price-image-caption {
-            margin-top: 15px;
+            margin-top: 20px;
             color: var(--text-medium);
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
         }
         
         /* АНИМАЦИЯ ПРИВЕТСТВИЯ */
@@ -652,6 +676,10 @@
             .aruana-title {
                 font-size: 36px;
             }
+            
+            .aruana-section {
+                padding: 30px 25px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -699,6 +727,13 @@
             
             .aruana-section {
                 padding: 25px 20px;
+            }
+            
+            .aruana-close {
+                top: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
             }
         }
 
@@ -760,6 +795,14 @@
                 width: 40px;
                 height: 40px;
             }
+            
+            .sphere-title {
+                font-size: 20px;
+            }
+            
+            .sphere-text {
+                font-size: 15px;
+            }
         }
 
         @media (max-width: 360px) {
@@ -788,11 +831,11 @@
     <!-- СТРАНИЦА ARU ANA -->
     <div class="aruana-page" id="aruanaPage">
         <div class="aruana-bg"></div>
+        <button class="aruana-close" id="aruanaClose">
+            <i class="fas fa-times"></i>
+        </button>
+        
         <div class="aruana-content">
-            <button class="aruana-close" id="aruanaClose">
-                <i class="fas fa-times"></i>
-            </button>
-            
             <div class="aruana-header">
                 <h1 class="aruana-title">Трансформационная игра «ARU ANA»</h1>
                 <div class="aruana-subtitle">Путешествие к себе и гармонии в отношениях</div>
@@ -834,11 +877,10 @@
                 
                 <div class="aruana-section">
                     <h2 class="aruana-section-title">Прайс-лист</h2>
-                    <a href="https://ibb.co.com/4wFWBrvF"><img src="https://i.ibb.co.com/4wFWBrvF/photo-2025-11-12-20-58-46.jpg" alt="photo-2025-11-12-20-58-46" border="0"></a>
-                    <div class="price-image-container">
-                        <img src="ВСТАВЬТЕ_ССЫЛКУ_НА_ФОТО_ПРАЙС_ЛИСТА" alt="Прайс-лист трансформационной игры ARU ANA" class="price-image">
-                        <div class="price-image-caption">Прайс-лист трансформационной игры «ARU ANA»</div>
+                    <div class="price-fullscreen">
+                        <img src="https://i.ibb.co.com/4wFWBrvF/photo-2025-11-12-20-58-46.jpg" alt="Прайс-лист трансформационной игры ARU ANA" class="price-image">
                     </div>
+                    <div class="price-image-caption">Прайс-лист трансформационной игры «ARU ANA»</div>
                 </div>
             </div>
         </div>
@@ -870,8 +912,7 @@
                 <div class="profile-section">
                     <!-- КРУГЛАЯ ФОТОГРАФИЯ -->
                     <div class="profile-image-container">
-                      <a href="https://ibb.co.com/C3d1RVgy"><img src="https://i.ibb.co.com/C3d1RVgy/dana-jpg.jpg" alt="dana-jpg" border="0"></a>
-                        <img src="ВСТАВЬТЕ_ССЫЛКУ_НА_ОСНОВНУЮ_ФОТОГРАФИЮ" alt="Дана Абдрахманова" class="profile-image">
+                        <img src="https://i.ibb.co.com/C3d1RVgy/dana-jpg.jpg" alt="Дана Абдрахманова" class="profile-image">
                     </div>
                     
                     <!-- ИМЯ ПОД ФОТОГРАФИЕЙ -->
@@ -1040,8 +1081,9 @@
                 document.body.style.overflow = '';
             });
             
-            page.addEventListener('click', function(e) {
-                if (e.target === page) {
+            // Закрытие по ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && page.classList.contains('active')) {
                     page.classList.remove('active');
                     document.body.style.overflow = '';
                 }
