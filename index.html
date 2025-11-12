@@ -53,6 +53,168 @@
             padding: 0 15px;
         }
         
+        /* СТРАНИЦА ARU ANA */
+        .aruana-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10000;
+            overflow-y: auto;
+        }
+        
+        .aruana-page.active {
+            display: block;
+        }
+        
+        .aruana-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            <a href="https://ibb.co.com/d4zsx3X3"><img src="https://i.ibb.co.com/d4zsx3X3/photo-2025-11-12-20-57-31.jpg" alt="photo-2025-11-12-20-57-31" border="0"></a>
+            background-image: url('ВСТАВЬТЕ_ССЫЛКУ_НА_ФОТО_ДЛЯ_ФОНА_ARU_ANA');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        .aruana-content {
+            background: rgba(254, 247, 237, 0.95);
+            min-height: 100vh;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .aruana-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--emerald-primary);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 2;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+        }
+        
+        .aruana-close:hover {
+            background: var(--emerald-dark);
+            transform: scale(1.1);
+        }
+        
+        .aruana-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+        
+        .aruana-title {
+            color: var(--emerald-primary);
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(13, 148, 136, 0.2);
+        }
+        
+        .aruana-subtitle {
+            color: var(--text-medium);
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .aruana-main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .aruana-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(13, 148, 136, 0.1);
+            border: 2px solid var(--gold-primary);
+        }
+        
+        .aruana-section-title {
+            color: var(--emerald-primary);
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .aruana-description {
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .aruana-spheres {
+            display: grid;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .sphere-item {
+            padding: 25px;
+            background: var(--beige-light);
+            border-radius: 15px;
+            border-left: 4px solid var(--emerald-primary);
+        }
+        
+        .sphere-title {
+            color: var(--emerald-primary);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sphere-text {
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .price-image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .price-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 3px solid var(--gold-primary);
+        }
+        
+        .price-image-caption {
+            margin-top: 15px;
+            color: var(--text-medium);
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
         /* АНИМАЦИЯ ПРИВЕТСТВИЯ */
         .welcome-overlay {
             position: fixed;
@@ -129,159 +291,6 @@
             animation: float 3s ease-in-out infinite;
             box-shadow: 0 0 15px var(--gold-glow);
             opacity: 0;
-        }
-        
-        /* МОДАЛЬНОЕ ОКНО ARU ANA */
-        .aruana-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 10000;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .aruana-modal.active {
-            display: flex;
-        }
-        
-        .aruana-content {
-            background: var(--beige-card);
-            border-radius: 20px;
-            max-width: 800px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            border: 3px solid var(--gold-primary);
-        }
-        
-        .aruana-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://i.ibb.co.com/Ld8NC6G2/photo-2025-10-23-23-29-41.jpg');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.1;
-            border-radius: 20px;
-            z-index: 0;
-        }
-        
-        .aruana-inner {
-            position: relative;
-            z-index: 1;
-            padding: 30px;
-        }
-        
-        .aruana-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: var(--emerald-primary);
-            color: white;
-            border: none;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 18px;
-            z-index: 2;
-            transition: all 0.3s ease;
-        }
-        
-        .aruana-close:hover {
-            background: var(--emerald-dark);
-            transform: scale(1.1);
-        }
-        
-        .aruana-title {
-            text-align: center;
-            margin-bottom: 25px;
-            color: var(--emerald-primary);
-            font-size: 28px;
-            font-weight: 700;
-        }
-        
-        .aruana-description {
-            margin-bottom: 30px;
-            font-size: 16px;
-            line-height: 1.7;
-            color: var(--text-dark);
-        }
-        
-        .aruana-section {
-            margin-bottom: 25px;
-        }
-        
-        .aruana-section-title {
-            color: var(--emerald-primary);
-            margin-bottom: 10px;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        
-        .aruana-price-list {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 15px;
-            border: 2px solid var(--gold-primary);
-        }
-        
-        .aruana-price-title {
-            text-align: center;
-            margin-bottom: 15px;
-            color: var(--emerald-primary);
-            font-weight: 600;
-            font-size: 20px;
-        }
-        
-        .price-item {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed var(--gold-primary);
-        }
-        
-        .price-item:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-        
-        .price-name {
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 5px;
-        }
-        
-        .price-desc {
-            font-size: 14px;
-            color: var(--text-medium);
-            margin-bottom: 5px;
-        }
-        
-        .price-cost {
-            font-weight: 600;
-            color: var(--emerald-primary);
-        }
-        
-        .price-discount {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px dashed var(--gold-primary);
-            font-size: 14px;
-            color: var(--text-medium);
         }
         
         /* АНИМАЦИИ */
@@ -552,6 +561,34 @@
             color: white;
         }
         
+        .aruana-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 30px;
+            background: var(--emerald-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: clamp(16px, 4vw, 18px);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 3px solid var(--gold-primary);
+            box-shadow: 0 6px 25px rgba(13, 148, 136, 0.3);
+            width: 100%;
+            text-align: center;
+            min-height: 60px;
+            cursor: pointer;
+        }
+        
+        .aruana-btn:hover {
+            background: var(--emerald-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(13, 148, 136, 0.4);
+            border-color: var(--gold-glow);
+            color: white;
+        }
+        
         .whatsapp-btn {
             display: inline-flex;
             align-items: center;
@@ -612,8 +649,8 @@
                 height: 240px;
             }
             
-            .aruana-content {
-                max-width: 90%;
+            .aruana-title {
+                font-size: 36px;
             }
         }
         
@@ -656,12 +693,12 @@
                 font-size: 12px;
             }
             
-            .aruana-inner {
-                padding: 25px 20px;
+            .aruana-title {
+                font-size: 32px;
             }
             
-            .aruana-title {
-                font-size: 24px;
+            .aruana-section {
+                padding: 25px 20px;
             }
         }
 
@@ -686,7 +723,7 @@
                 padding: 0 10px;
             }
             
-            .catalog-btn-large {
+            .catalog-btn-large, .aruana-btn {
                 padding: 16px 25px;
                 min-height: 55px;
             }
@@ -705,16 +742,23 @@
                 font-size: 12px;
             }
             
-            .aruana-inner {
-                padding: 20px 15px;
+            .aruana-content {
+                padding: 30px 15px;
             }
             
             .aruana-title {
-                font-size: 22px;
+                font-size: 28px;
             }
             
-            .aruana-description {
-                font-size: 15px;
+            .aruana-section {
+                padding: 20px 15px;
+            }
+            
+            .aruana-close {
+                top: 15px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
             }
         }
 
@@ -741,73 +785,59 @@
         </div>
     </div>
 
-    <!-- МОДАЛЬНОЕ ОКНО ARU ANA -->
-    <div class="aruana-modal" id="aruanaModal">
+    <!-- СТРАНИЦА ARU ANA -->
+    <div class="aruana-page" id="aruanaPage">
+        <div class="aruana-bg"></div>
         <div class="aruana-content">
-            <div class="aruana-bg"></div>
             <button class="aruana-close" id="aruanaClose">
                 <i class="fas fa-times"></i>
             </button>
-            <div class="aruana-inner">
-                <h2 class="aruana-title">Трансформационная игра «ARU ANA»</h2>
-                
-                <div class="aruana-description">
-                    <p>Трансформационная игра «ARU ANA» — не просто игра, это глубинное путешествие к себе, которое помогает женщине восстановить внутреннюю гармонию и наладить самые важные отношения в жизни.</p>
+            
+            <div class="aruana-header">
+                <h1 class="aruana-title">Трансформационная игра «ARU ANA»</h1>
+                <div class="aruana-subtitle">Путешествие к себе и гармонии в отношениях</div>
+            </div>
+            
+            <div class="aruana-main">
+                <div class="aruana-section">
+                    <h2 class="aruana-section-title">О игре</h2>
+                    <div class="aruana-description">
+                        Трансформационная игра «ARU ANA» — не просто игра, это глубинное путешествие к себе, которое помогает женщине восстановить внутреннюю гармонию и наладить самые важные отношения в жизни.
+                    </div>
                 </div>
                 
                 <div class="aruana-section">
-                    <h3 class="aruana-section-title">💫 Игра затрагивает три ключевые сферы жизни женщины:</h3>
-                    
-                    <div class="aruana-section">
-                        <h4 class="aruana-section-title">1. 🌷 Отношения с собой</h4>
-                        <p>Восстановление самоценности, уверенности, внутреннего спокойствия и принятия. Женщина учится слышать себя и наполняться изнутри.</p>
-                    </div>
-                    
-                    <div class="aruana-section">
-                        <h4 class="aruana-section-title">2. 👩‍👧 Отношения с детьми</h4>
-                        <p>Осознание истинных потребностей ребёнка, укрепление доверия и эмоциональной связи. Игра помогает маме увидеть, как она может поддерживать ребёнка не через контроль, а через вдохновение и веру в его силы. Через это у ребёнка естественно развивается уверенность в себе, самостоятельность и открытость.</p>
-                    </div>
-                    
-                    <div class="aruana-section">
-                        <h4 class="aruana-section-title">3. 💞 Отношения с супругом</h4>
-                        <p>Гармонизация семейных связей, восстановление доверия и партнёрства. Женщина осознаёт, где теряется близость, и учится выстраивать отношения на любви, уважении и взаимопонимании.</p>
-                    </div>
-                    
-                    <div class="aruana-description">
-                        <p>✨ В процессе игры ты получишь глубокие инсайты, освободишься от внутренних ограничений и выйдешь в состояние лёгкости, принятия и внутренней силы ♥️</p>
+                    <h2 class="aruana-section-title">💫 Ключевые сферы жизни женщины</h2>
+                    <div class="aruana-spheres">
+                        <div class="sphere-item">
+                            <h3 class="sphere-title">1. 🌷 Отношения с собой</h3>
+                            <p class="sphere-text">Восстановление самоценности, уверенности, внутреннего спокойствия и принятия. Женщина учится слышать себя и наполняться изнутри.</p>
+                        </div>
+                        
+                        <div class="sphere-item">
+                            <h3 class="sphere-title">2. 👩‍👧 Отношения с детьми</h3>
+                            <p class="sphere-text">Осознание истинных потребностей ребёнка, укрепление доверия и эмоциональной связи. Игра помогает маме увидеть, как она может поддерживать ребёнка не через контроль, а через вдохновение и веру в его силы. Через это у ребёнка естественно развивается уверенность в себе, самостоятельность и открытость.</p>
+                        </div>
+                        
+                        <div class="sphere-item">
+                            <h3 class="sphere-title">3. 💞 Отношения с супругом</h3>
+                            <p class="sphere-text">Гармонизация семейных связей, восстановление доверия и партнёрства. Женщина осознаёт, где теряется близость, и учится выстраивать отношения на любви, уважении и взаимопонимании.</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="aruana-price-list">
-                    <h3 class="aruana-price-title">Прайс-лист</h3>
-                    
-                    <div class="price-item">
-                        <div class="price-name">Демоверсия</div>
-                        <div class="price-desc">Без оплаты • Без сопровождения</div>
-                        <div class="price-cost">Бесплатно</div>
+                <div class="aruana-section">
+                    <div class="aruana-description">
+                        ✨ В процессе игры ты получишь глубокие инсайты, освободишься от внутренних ограничений и выйдешь в состояние лёгкости, принятия и внутренней силы ♥️
                     </div>
-                    
-                    <div class="price-item">
-                        <div class="price-name">Пакет «Пробуждение»</div>
-                        <div class="price-desc">Групповое участие • Сопровождение в течение 2 недель</div>
-                        <div class="price-cost">10 000 ₸</div>
-                    </div>
-                    
-                    <div class="price-item">
-                        <div class="price-name">Пакет «Путь к себе»</div>
-                        <div class="price-desc">Индивидуальное участие • Сопровождение в течение 2 недель</div>
-                        <div class="price-cost">15 000 ₸</div>
-                    </div>
-                    
-                    <div class="price-item">
-                        <div class="price-name">Пакет «Гармония»</div>
-                        <div class="price-desc">Индивидуальное участие • Сопровождение в течение 1 месяца</div>
-                        <div class="price-cost">25 000 ₸</div>
-                    </div>
-                    
-                    <div class="price-discount">
-                        <p>50% скидки для многодетных мам</p>
-                        <p>50% скидки для партнёров SilkWay</p>
+                </div>
+                
+                <div class="aruana-section">
+                    <h2 class="aruana-section-title">Прайс-лист</h2>
+                    <a href="https://ibb.co.com/4wFWBrvF"><img src="https://i.ibb.co.com/4wFWBrvF/photo-2025-11-12-20-58-46.jpg" alt="photo-2025-11-12-20-58-46" border="0"></a>
+                    <div class="price-image-container">
+                        <img src="ВСТАВЬТЕ_ССЫЛКУ_НА_ФОТО_ПРАЙС_ЛИСТА" alt="Прайс-лист трансформационной игры ARU ANA" class="price-image">
+                        <div class="price-image-caption">Прайс-лист трансформационной игры «ARU ANA»</div>
                     </div>
                 </div>
             </div>
@@ -840,7 +870,8 @@
                 <div class="profile-section">
                     <!-- КРУГЛАЯ ФОТОГРАФИЯ -->
                     <div class="profile-image-container">
-                        <img src="https://i.ibb.co.com/Ld8NC6G2/photo-2025-10-23-23-29-41.jpg" alt="Дана Абдрахманова" class="profile-image">
+                        <a href="https://ibb.co.com/4wFWBrvF"><img src="https://i.ibb.co.com/4wFWBrvF/photo-2025-11-12-20-58-46.jpg" alt="photo-2025-11-12-20-58-46" border="0"></a>
+                        <img src="ВСТАВЬТЕ_ССЫЛКУ_НА_ОСНОВНУЮ_ФОТОГРАФИЮ" alt="Дана Абдрахманова" class="profile-image">
                     </div>
                     
                     <!-- ИМЯ ПОД ФОТОГРАФИЕЙ -->
@@ -867,8 +898,7 @@
                     </a>
                     
                     <!-- КНОПКА ARU ANA -->
-                    <button class="catalog-btn-large" id="aruanaBtn">
-                        <i class="fas fa-gamepad"></i>
+                    <button class="aruana-btn" id="aruanaBtn">
                         <span>Aru Ana</span>
                     </button>
                     
@@ -994,25 +1024,25 @@
             document.getElementById('langDropdown').classList.remove('show');
         }
 
-        // УПРАВЛЕНИЕ МОДАЛЬНЫМ ОКНОМ ARU ANA
-        function initAruAnaModal() {
-            const modal = document.getElementById('aruanaModal');
+        // УПРАВЛЕНИЕ СТРАНИЦЕЙ ARU ANA
+        function initAruAnaPage() {
+            const page = document.getElementById('aruanaPage');
             const openBtn = document.getElementById('aruanaBtn');
             const closeBtn = document.getElementById('aruanaClose');
             
             openBtn.addEventListener('click', function() {
-                modal.classList.add('active');
+                page.classList.add('active');
                 document.body.style.overflow = 'hidden';
             });
             
             closeBtn.addEventListener('click', function() {
-                modal.classList.remove('active');
+                page.classList.remove('active');
                 document.body.style.overflow = '';
             });
             
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.classList.remove('active');
+            page.addEventListener('click', function(e) {
+                if (e.target === page) {
+                    page.classList.remove('active');
                     document.body.style.overflow = '';
                 }
             });
@@ -1057,7 +1087,7 @@
         // ЗАПУСК АНИМАЦИИ ПРИ ЗАГРУЗКЕ
         window.addEventListener('load', function() {
             startWelcomeAnimation();
-            initAruAnaModal();
+            initAruAnaPage();
         });
 
         // УСТАНАВЛИВАЕМ РУССКИЙ ЯЗЫК ПО УМОЛЧАНИЮ
